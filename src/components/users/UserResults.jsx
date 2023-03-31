@@ -8,7 +8,7 @@ const UserResults = () => {
     const { users, loading } = useContext(GithubContext)
     
     const userElements = users.map(user => (
-        <Link to={`/users/${user.login}`} key={user.id} className="basis-1/4 grow card w-96 bg-base-100 shadow-xl mx-2 mb-4">
+        <Link to={`/user/${user.login}`} key={user.id} className="basis-1/4 grow card w-96 bg-base-100 shadow-xl mx-2 mb-4">
             <li>
                 <figure><img src={user.avatar_url} alt="Shoes" /></figure>
                 <div className="card-body">
