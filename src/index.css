@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.custom-card-image .card.image-full:before {
+    border-radius: 0.5rem;
+    opacity: .45;
+}
+
+.hover\:bg-gray-900:hover {
+    color: white;
+}

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
 const Navbar = ({ title }) => {
+
   return (
     <nav className="navbar mb-12 shadow-lg bg-neutral">
         <div className="container mx-auto">
