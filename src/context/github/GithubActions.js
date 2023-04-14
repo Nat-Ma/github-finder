@@ -5,7 +5,7 @@ const GITHUB_TOKEN = process.env.REACT_APP_GH_TOKEN
 
 const github = axios.create({
     baseURL: GITHUB_URL,
-    headers: { "Authorization": `Bearer ${GITHUB_TOKEN}` }
+    headers: { Authorization: `Bearer ${GITHUB_TOKEN}` }
 })
 
 export const getUserAndRepos = async (username) => {

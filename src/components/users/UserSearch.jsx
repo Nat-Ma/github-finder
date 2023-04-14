@@ -10,12 +10,15 @@ const UserSearch = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
+        console.log('Hellooooo????')
 
         if (text === '') {
             setAlert('Please enter a search term.', 'error')
         } else {
             dispatch({ type: 'SET_LOADING' })
 
+            console.log('hello users')
+            console.log(process.env.REACT_APP_GH_TOKEN)
             const users = await searchUsers(text)
             dispatch({ type: 'GET_USERS', payload: users })
             setAlert('YAAAAYYYYY', 'success')
