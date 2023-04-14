@@ -17,8 +17,6 @@ const UserSearch = () => {
         } else {
             dispatch({ type: 'SET_LOADING' })
 
-            console.log('hello users')
-            console.log(process.env.REACT_APP_GH_TOKEN)
             const users = await searchUsers(text)
             dispatch({ type: 'GET_USERS', payload: users })
             setAlert('YAAAAYYYYY', 'success')
